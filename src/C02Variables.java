@@ -50,11 +50,11 @@ public class C02Variables {
 //        char my_char = '가';
 //        System.out.println(my_char);
 //
-////       boolean : true(1), false(0)
-//        boolean my_bool = true;
-//        System.out.println(my_bool);
-//        if(my_bool){
-//            System.out.println("조건식이 참입니다");
+//       boolean : true(1), false(0)
+        boolean my_bool = true;
+        System.out.println(my_bool);
+        if (my_bool) {
+            System.out.println("조건식이 참입니다");
 //        }
 //        int bool_num1 = 20;
 //        int bool_num2 = 10;
@@ -84,31 +84,35 @@ public class C02Variables {
 //        int a가 1이고 int b가 4일때 둘을 나눈 값을 int에 담아 출력, double에 담아 출력.
             int a = 1;
             int b = 4;
-            int result1 = a/b;
-            double result2 = a/b;
-                System.out.println(result1);
-                System.out.println(result2);
-            double result3 = a/(double)b;
+            int result1 = a / b;
+            double result2 = a / b;
+            System.out.println(result1);
+            System.out.println(result2);
+            double result3 = a / (double) b;
             System.out.println(result3);
 
-    //변수와 상수 :: 다시 정리
-        //선언과 동시에 초기화
-        int a1 = 10;
+            //변수와 상수 :: 다시 정리
+            //선언과 동시에 초기화
+            int a1 = 10;
 
-        //변수값 변경
-        a1 = 20;
+            //변수값 변경
+            a1 = 20;
 
-        //선언만 한 뒤에 나중에 초기화
-        int a2; //선언만 하면 메모리에서 0값으로 초기화
-        a2 = 20;
+            //선언만 한 뒤에 나중에 초기화
+            int a2; //지역변수는 선언만 됐을때는 값이 0으로 초기화되지 않으나, 객체로 선언될때는 0으로 초기화
+            a2 = 20;
+                //객체로 만들때는 0으로 초기화
+            int[] arr = new int[5];
+            System.out.println(arr[0]);
 
-        //상수는 값의 재할당이 불가능
-        final int AGES = 20;
-        // AGES = 30; 에러 발생
+            //상수는 값의 재할당이 불가능
+            final int AGES = 20;
+            // AGES = 30; 에러 발생
 
-        //상수는 선언만 한 뒤에 나중에 초기화 하는 방식이 java8이전에는 안됐지만 이후 가능해짐
-        final int AGES2;
-        AGES2 = 20;
+            //상수는 선언만 한 뒤에 나중에 초기화 하는 방식이 java8이전에는 안됐지만 이후 가능해짐
+            final int AGES2;
+            AGES2 = 20;
+        }
     }
 }
 
