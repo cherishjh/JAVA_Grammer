@@ -74,8 +74,8 @@ public class C06String {
         System.out.println(mySt2.indexOf("j"));
 */
 //    contains : 특정 문자열이 있는지 여부를 boolean으로 리턴
-        /*String mySt2 = "hello java";
-        System.out.println(mySt2.contains("hello"));*/
+        String mySt2 = "hello java";
+        System.out.println(mySt2.contains("hello"));
 
 //     char At: 문자에서 특정 위치(index)의 문자(char)를 리턴
   /*      String a ="hello";

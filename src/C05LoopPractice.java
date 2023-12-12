@@ -54,6 +54,17 @@ public class C05LoopPractice {
 //        }
 ////        최소공배수
 //        int minNum = a/MDN * b/MDN * MDN;
+//        int answer=0;
+//          int n=50;
+//        int i= (n>6) ? n : 6;
+//        while(true){
+//            if(i%6==0 && i%n==0) {
+//                answer = i;
+//                break;
+//            } else{
+//                i++;
+//            }
+//        }
 
 //       라벨문 활용1
    /*     int[][] matrix={{1,2,3,4},{5,6,7},{8,9,11},{10,11,12,13,14}};
