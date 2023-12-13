@@ -37,26 +37,34 @@ public class C09Map {
         /*while(myIter.hasNext()){
             System.out.println(myIter.next());
         }*/
-//      실습예제: 아래의 리스트를 가지고 좋아하는 운동종목과 사람 숫자를 map 형태로 나타내시오.
-        /*List<String> myList= new ArrayList<>();
-        myList.add("basketball");
-        myList.add("basketball");
-        myList.add("basketball");
-        myList.add("baseball");
-        myList.add("baseball");
-        myList.add("archer");
-        myList.add("archer");
-        myList.add("archer");*/
-//          basketball 을 n명이 좋아한다.
-//        Map<String,Integer> myMap= new HashMap<>();
-//        for (String a: myList){
-            /*if(myMap.containsKey(a)){
-                myMap.put(a,myMap.get(a)+1);
-            }else{
-                myMap.put(a,1);
-            }*/
-//            myMap.put(a,myMap.getOrDefault(a,0)+1);
-//        }
+//      실습예제: //아래의 리스트를 가지고 좋아하는 운동종목과 사람숫자를 map형태로 나타내시오.
+        /*List<String> list = new ArrayList<>();
+        list.add("soccer");
+        list.add("basketball");
+        list.add("soccer");
+        list.add("baseball");
+        list.add("soccer");
+        list.add("soccer");
+        list.add("soccer");
+        list.add("baseball");
+
+        HashMap<String, Integer> map1 = new HashMap<>();
+        for (int i = 0; i<list.size(); i++) {
+            if (map1.containsKey(list.get(i))) {
+                map1.put(list.get(i), map1.get(list.get(i))+1);
+            } else {
+                map1.put(list.get(i), 1);
+            }
+            map1.put(list.get(i), map1.getOrDefault(list.get(i),0)+1);
+        }
+        //System.out.println(map1);
+        HashMap<String, Integer> map2 = new HashMap<>();
+
+        for (String a : list) {
+            map2.put(a, map2.getOrDefault(a,0)+1); // 있으면 +1 없으면 0
+        }
+
+        System.out.println(map2);*/
 //완주하지 못한 선수 구하기 : 프로그래머스
         String[] participant = {"leo", "kiki", "eden"};
         String[] completion = {"eden", "kiki"};
@@ -78,6 +86,25 @@ public class C09Map {
             }
         }
         System.out.println(answer);
+
+//        LinkedHashMap 삽입순서 유지, 넣은 순서대로
+        Map<String,Integer> myMap1=new LinkedHashMap<>();
+        myMap1.put("hello5",5);
+        myMap1.put("hello4",4);
+        myMap1.put("hello3",3);
+        myMap1.put("hello2",2);
+        myMap1.put("hello1",1);
+
+//        키에 따른 오름차순 정렬
+        Map<String,Integer> myMap2 = new TreeMap<>();
+        myMap2.put("hello5",5);
+        myMap2.put("hello4",4);
+        myMap2.put("hello3",3);
+        myMap2.put("hello2",2);
+        myMap2.put("hello1",1);
+
+        System.out.println(myMap1);
+        System.out.println(myMap2);
     }
 }
 
