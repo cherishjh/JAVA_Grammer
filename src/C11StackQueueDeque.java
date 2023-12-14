@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 
-public class C11StackQueue {
+public class C11StackQueueDeque {
     public static void main(String[] args) {
        /* Stack<Integer> myst = new Stack<>();
         myst.push(10);
@@ -94,7 +94,7 @@ public class C11StackQueue {
 
 
 //      길이의 제한이 있는 큐: ArrayBlockingQueue
-        Queue<String> myQue = new ArrayBlockingQueue<>(3);  //capactiy: 길이 제한
+        /*Queue<String> myQue = new ArrayBlockingQueue<>(3);*/  //capactiy: 길이 제한
 //        add와 offer 의 차이: add는 길이가 다 찼을때 에러를 발생, offer 공간이 충분할때만 add
      /*   myQue.offer("hello1");
         myQue.offer("hello1");
@@ -103,7 +103,7 @@ public class C11StackQueue {
         System.out.println(myQue);*/
 
 //        우선순위 que
-        Queue<Integer> pq = new PriorityQueue<>();
+      /*  Queue<Integer> pq = new PriorityQueue<>();
         pq.add(10);
         pq.add(20);
         pq.add(50);
@@ -112,6 +112,54 @@ public class C11StackQueue {
         System.out.println(pq);
         while(!pq.isEmpty()){
             System.out.println(pq.poll());
+            }*/
+
+        //        ArrayDeque : 양방향에서 데이터를 삽입/제거할 수 있다.
+        // 성능 빠름 !
+       /* Deque<Integer> myDeque = new ArrayDeque<>();
+        myDeque.addFirst(10);
+        myDeque.addFirst(20);
+        System.out.println(myDeque);   //20,10
+        myDeque.addLast(30);
+        System.out.println(myDeque);        //20,10,30
+
+        System.out.println(myDeque.pollFirst()); //20
+        System.out.println(myDeque.pollLast());  //30
+        System.out.println(myDeque);             //10*/
+        /*String s="(()(";
+        Deque<Character> clause = new ArrayDeque<>();
+        for(int a=0; a<s.length(); a++)
+            if(clause.isEmpty()) {
+                clause.addLast(s.charAt(a));
+            }else{
+                if(clause.peekLast()=='(' && s.charAt(a)==')')
+
+        boolean answer = true;
+        int count_a = 0;
+        int count_b = 0;
+
+        if (clause.size() % 2 != 0) {
+            answer = false;        //return 쓰는게 효율성 좋음 /바로 끊어줌
+        }
+            if (clause.pollFirst() == ')' || clause.pollLast() == '(') {
+                answer = false;
+            }
+            if (clause.peekFirst() == '(' && clause.peekLast() == ')') {
+                for (int i = 0; i < clause.size(); i++) {
+                    if (clause.pollFirst() == '(') {
+                        count_a++;
+                    } else {
+                        count_b++;
+                    }
+                }
+                if (count_a == count_b) {
+                    answer = true;
+                } else {
+                    answer = false;
+                }
             }
         }
+        System.out.println(answer);
+    }*/
     }
+}
