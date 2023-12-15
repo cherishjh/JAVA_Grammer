@@ -87,6 +87,7 @@ class BankAccount{
         this.balance += money;
         System.out.println(money + "원 입금되었습니다.");
     }
+
     //    출금
     public void withdraw(int money){
         if(this.balance < money){
