@@ -124,11 +124,11 @@ public class C06String {
            } // 미만인것 주의!!!*/
 
 //    trim, strip
-       /* String trimSt = "   hello world     ";      //원본의 데이터값을 제거하는게 아님
+        String trimSt = "   hello world     ";      //원본의 데이터값을 제거하는게 아님
         String new_trimSt = trimSt.trim();
         String stripSt= trimSt.strip();
         System.out.println(new_trimSt);
-        System.out.println(stripSt);*/
+        System.out.println(stripSt);
 
 //       toUpperCase  toLowerCase
        /* String a="Hello";
@@ -138,7 +138,7 @@ public class C06String {
         System.out.println(a2);*/
 
 // 실습 예제 : 알파벳만 빼고 str2에 새로 담기
-        /*String str = "012abc34한글123";
+        String str = "012abc34한글123";
         String str2 = "";
         for(int i=0;i<str.length();i++) {
             char temp = str.charAt(i);
@@ -146,7 +146,7 @@ public class C06String {
                 str2 += Character.toString(temp);
              }
             }
-        System.out.println(str2);*/
+        System.out.println(str2);
 
 //        특정 문자 제거하기
         /*class Solution {
@@ -202,7 +202,7 @@ public class C06String {
    /*     boolean matcher = Pattern.matches(".*[a-z].*","he한글llo은world");
         System.out.println(matcher);*/
 
-//       전화번호 검증
+//       전화번호 검증w=
 //        {}: 연속으로  \d: 숫자
   /*      boolean matcher2 = Pattern.matches("^\\d{3}-\\d{4}-\\d{4}$", "010-1234-2312");
         System.out.println(matcher2);*/

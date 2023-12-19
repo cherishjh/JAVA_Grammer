@@ -1,3 +1,4 @@
+/*
 package C12ClassLecture;
 
 import java.util.ArrayList;
@@ -138,4 +139,4 @@ public class AuthorPostService {
         public Long getAuthor_id() {
             return author_id;
         }
-    }
+    }*/
