@@ -13,9 +13,6 @@ public class C1303MethodOverriding {
         Cat cat = new Cat();
         dog.sound();
         cat.sound();
-
-        List<String> myList= new LinkedList<>();
-        myList.
     }
 }
 class Animal{
