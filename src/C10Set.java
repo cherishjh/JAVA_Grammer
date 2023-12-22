@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.*;
 
 public class C10Set {
@@ -80,13 +81,13 @@ public class C10Set {
         //순서가 없으므로 enhanced for 문, iterator 사용
 
 //        LinkedHashSet, TreeSet
-        /*Set<String > mySet= new TreeSet<>();
+        Set<String > mySet= new LinkedHashSet<>();
         mySet.add("hello5");
         mySet.add("hello4");
         mySet.add("hello3");
         mySet.add("hello2");
         mySet.add("hello1");
-        System.out.println(mySet);*/
+        System.out.println(mySet);
 
         //두개 뽑아서 더하기
         int[] numbers = {2, 1, 3, 4, 1};
