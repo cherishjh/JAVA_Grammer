@@ -39,22 +39,22 @@ public class C10Set {
 //        Set<String> mySet1 = new HashSet<>(list);
 //
 //        //배열을 인자값을 받아 set을 초기화
-//        String[] arr = new String[3];
-//        arr[0] = "a";
-//        arr[1] = "b";
-//        arr[2] = "c";
-//
-//        Set<String> mySet2 = new HashSet<>(Arrays.asList(arr));
-//        System.out.println(mySet2);
-//
-//        mySet2.remove("a");
-//        System.out.println(mySet2);
-//
-//        int[] myInt = new int[3];
-//        myInt[0] = 0;
-//        myInt[0] = 1;
-//        myInt[0] = 2;
-//
+        String[] arr = new String[3];
+        arr[0] = "a";
+        arr[1] = "b";
+        arr[2] = "c";
+
+        Set<String> mySet2 = new HashSet<>(Arrays.asList(arr));
+        System.out.println(mySet2);
+
+        mySet2.remove("a");
+        System.out.println(mySet2);
+
+        int[] myInt = new int[3];
+        myInt[0] = 0;
+        myInt[0] = 1;
+        myInt[0] = 2;
+
 
        /* Set<String> mySet1 = new HashSet<>(Arrays.asList("java","python","javascript"));
         Set<String> mySet2 = new HashSet<>(Arrays.asList("java","html","css"));*/
