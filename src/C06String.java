@@ -219,15 +219,15 @@ public class C06String {
             }
         }*/
 //       split
-        /*String a = "a:b:c:d";
+        String a = "a:b:c:d";
         String[] stArr=a.split(":");
-        System.out.println(Arrays.toString(stArr));*/
+        System.out.println(Arrays.toString(stArr));
 
-        String b = " a  b c d";
+        /*String b = " a  b c d";
         String[] stArr2 = b.split(" ");
         System.out.println(Arrays.toString(stArr2));
         String[] stArr3 = b.split("\\s+");
-        System.out.println(Arrays.toString(stArr3));
+        System.out.println(Arrays.toString(stArr3));*/
 
 //        isEmpty 와 null 구분
         /*String st1=null; //
