@@ -248,6 +248,8 @@ public class C06String {
      /*   String[] lang = {"python", "java", "javascript"};
         String result = String.join("::", lang);
         System.out.println(result);*/
+
+
 //  StringBuffer
         /*
         기본 문법

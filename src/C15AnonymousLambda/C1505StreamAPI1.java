@@ -20,6 +20,10 @@ public class C1505StreamAPI1 {
         Arrays.stream(arr).forEach(a->System.out.println(a));*/
         //Arrays.stream(arr).sorted().forEach(a -> System.out.println(a));
 
+        // 성능이 느리다. 최적화해야하는 상황이면 지양
+
+
+
 //        스트림의 생성
         //String[] myString = {"HTML", "CSS", "JAVA", "PYTHON"};
 //        스트림 <객체> : 제네릭 타입으로 stream 객체가 생성됨
@@ -63,6 +67,16 @@ public class C1505StreamAPI1 {
         String [] merryX=Arrays.stream(test).sorted(Comparator.reverseOrder()).toArray(String[]::new);
 
         List<Integer> myList= new ArrayList<>(Arrays.asList(6,1,2,3,4,5,2));*/
+
+        //        StreamApi, lambda를 활용한 내림차순 정렬
+       /* int[] arr2={5,1,2,7,3,1,2};
+        int[] new_arr2= Arrays.stream(arr2) //arr2를 대상으로 stream 객체 생성 문법
+        int[] new_arr2= Arrays.stream(arr2).boxed() // int를 Integer로 형변환 스트림객체생성
+        int[] new_arr2= Arrays.stream(arr2).boxed().sorted(Comparator.reverseOrder()) // 내림차순 정렬
+        int[] new_arr2= Arrays.stream(arr2).boxed().sorted(Comparator.reverseOrder()).mapToInt(a->a) // Integer를 int로 변환
+        int[] new_arr2= Arrays.stream(arr2).boxed().sorted(Comparator.reverseOrder()).mapToInt(a->a).toArray() // 배열로 변환
+
+
         //collect(변환할 컬렉션 객체 명시) :
         /*List<Integer> myList2= myList.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
 
